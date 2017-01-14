@@ -1,0 +1,54 @@
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+nav 
+{
+    height: 100%;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+.outer
+{
+    height: 100%;
+    width : 100%;
+    list-style-type: none;
+    background-color: lightgrey;
+    margin: 5%;
+ 
+}
+
+a
+{
+    text-decoration: none;
+    margin-left: 100px;
+    transition: margin-left 0.1s;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inner
+{   
+    height: 100%;
+    width: 0%;
+    padding: 6%;
+    
+    background-color: deeppink;
+    transition: width 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.outer:hover > div
+{
+    width: 100%;
+}
+
+.outer:hover > a
+{
+    margin-left: 110px;
+}
