@@ -1,12 +1,17 @@
-html {
+html ,body{
     height: 100%;
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: #ddd;
 }
 
 nav
-{
+{padding: 0;
+    margin: 0;
     width: 100%;
     position: fixed;
+   display: block;
 }
 nav ul{
     height: 100%;
@@ -20,7 +25,7 @@ nav ul li{
    
   
    
-     padding: 30% 10% 30% 30%;
+     padding: 30% 0% 30% 30%;
     font-weight: bold;
     position: relative;
   
@@ -28,13 +33,15 @@ nav ul li{
    font-size: 18px;
     list-style-type: none;
       background:  linear-gradient(to bottom, rgba(96,108,136,1) 10%,rgba(63,76,107,1) 80%);
-      
+      transition:  background 0.5s;
+  
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
- 
+  
 }
 nav ul ul{
     display: none;
@@ -49,8 +56,19 @@ nav ul li:hover{
     background:  #FFA7A7;
      
 }
+nav ul li :hover > a{
+    margin-left: 20px;
+}
 nav ul li:hover >ul{
     display: block;
     width: 70%;
+    opacity: 1;
       
+}
+
+article
+{   width: 80%;
+    color: black;
+   float: right;
+   line-height: 30px;
 }
