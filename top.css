@@ -1,0 +1,68 @@
+html,body
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+nav
+{   padding: 0;
+    margin: 0;
+    
+   display: block;
+}
+
+nav ul{
+    
+   padding: 0;
+    margin: 0;
+     position: relative;
+     
+}
+nav ul li
+{  
+    color: white;
+    margin: 0.1%;
+    padding: 2%;
+    font-weight: bold;
+   display: inline-block;
+    background: linear-gradient( white 10%,lightgray 80%);
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+    list-style-type: none;
+    position: relative;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+nav ul ul
+{
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity
+}
+nav ul ul li
+{
+    padding: 15%;
+    top: 30px;
+    left: -20%;
+}
+
+nav ul li:hover >a{
+     opacity: 1;
+     
+}
+
+nav ul li:hover >ul{
+    display: block;
+    
+}
