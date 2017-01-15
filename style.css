@@ -40,7 +40,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
- color: grey;
+ color: black;
   
 }
 nav ul ul{
@@ -53,7 +53,7 @@ nav ul ul{
   
 }
 nav ul li:hover{
-    background:  #FFA7A7;
+    background:  linear-gradient(black 5%, white 90%);
      
 }
 nav ul li :hover > a{
@@ -70,4 +70,52 @@ article
     color: black;
    float: right;
    line-height: 30px;
+}
+
+
+
+/*--for width 480px and 768px--*/
+
+@media screen and (max-width: 900px)
+{
+    nav ul{
+    height: 100%;
+   margin: 0;
+     padding: 0;
+  
+  width: 20%;
+     position: relative;
+    }
+    
+    nav ul li a{
+    text-decoration: none;
+ color: black;
+ font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 530px)
+{
+    nav ul{
+    height: 100%;
+   margin: 0;
+     padding: 0;
+  
+  width: 25%;
+     position: relative;
+    }
+    
+    nav ul li a{
+    text-decoration: none;
+ color: black;
+ font-size: 15px;
+    }
+  nav ul li:hover >ul{
+    display: block;
+    width: 100%;
+      
+}
+        
+    
 }
